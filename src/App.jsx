@@ -15,6 +15,7 @@ import News from './pages/News/News'
 import Events from './pages/Events/Events'
 import Publications from './pages/Publications/Publications'
 import OptionManager from './components/OptionManager/OptionManager'
+import ResourceDevLab from './pages/ResourceDevLab/ResourceDevLab'
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
           <Route path='events' element={<Events />} />
           <Route path='publications' element={<Publications />} />
           <Route path='contact-us' element={<ContactUs />} />
+          <Route path='resource-development-lab' element={<ResourceDevLab />} />
           <Route path='home/RDL' element={<OptionManager h="100vh" w="100vw" bc="white" bbsize="50px" />} />
         </Routes>
         <PageFooter />

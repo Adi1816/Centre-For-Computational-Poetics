@@ -9,6 +9,7 @@ import shresth from './shresth.png'
 import rdl from './rdl.png'
 import raj from './raj.png'
 import sumit from './sumit.png'
+import hamburger from './hamburger.svg'
 import itu from './itu.jpg'
 import nks from './nks.jpg'
 import shlok1 from './shlok1.png'
@@ -44,6 +45,7 @@ export const assets = {
   crossIcon,
   ark,
   srivastava,
+  hamburger,
   aman,
   vishal,
   shresth,

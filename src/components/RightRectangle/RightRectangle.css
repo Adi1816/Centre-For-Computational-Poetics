@@ -1,25 +1,24 @@
 .right-rectangle {
-  height: 40rem;
-  width: 20rem;
+  height: 40vw;
+  width: 20vw;
   /* border: 3px solid red; */
-  margin-top: 7%;
+  /* margin-top: 7%; */
+  font-size: 1.2vw;
   margin-bottom: 1%;
-  margin-left: 0.5rem;
-  margin-right: 1rem;
-  border-radius: 1rem;
-  padding: 2rem;
+  margin-left: 0.5vw;
+  margin-right: 1vw;
+  border-radius: 1vw;
+  /* padding: 2vw; */
   /* font-weight: 600; */
+  padding-left: 2vw;
   display: flex;
+  /* max-height: 100vh; */
   flex-direction: column;
 }
 
 .right-rectangle h2 {
   color: blue;
-  margin-bottom: 20px;
-}
-
-.right-rectangle .more-imp {
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
 }
 
 .right-rectangle .contribute span {
@@ -27,13 +26,9 @@
   font-weight: 700;
 }
 
-.right-rectangle .more-imp {
-  font-weight: 600;
-  font-size: 18px;
-}
 
 .right-rectangle .less-imp li {
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
 }
 
 .right-rectangle .less-imp li span {
@@ -52,10 +47,29 @@
 }
 
 .right-rectangle .hindi-mahakosh-desc {
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
 }
 
 .right-rectangle .less-imp .development-info {
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 0.5vw;
+  margin-left: 1vw;
+}
+
+@media (max-width: 768px) {
+  .right-rectangle {
+    width: 80vw;
+    /* border: 3px solid red; */
+    /* margin-top: 7%; */
+    font-size: 2vw;
+    /* margin-bottom: 1%; */
+    margin-left: 2vw;
+    margin-right: 2vw;
+    /* border-radius: 1vw; */
+    /* padding: 2vw; */
+    /* font-weight: 600; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

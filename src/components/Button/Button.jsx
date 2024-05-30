@@ -3,7 +3,7 @@
 import React from 'react'
 import './Button.css'
 
-const Button = ({text, onClick}) => {
+const Button = ({ text, onClick }) => {
   return (
     <li onClick={onClick}>{text}</li>
   )

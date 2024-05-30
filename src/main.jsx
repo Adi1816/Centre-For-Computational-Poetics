@@ -6,11 +6,11 @@ import { BrowserRouter } from 'react-router-dom'
 import LoginContextProvider from './contexts/LoginContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <LoginContextProvider>
-        <App />
-      </LoginContextProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <BrowserRouter>
+    <LoginContextProvider>
+      <App />
+    </LoginContextProvider>
+  </BrowserRouter>
+  // </React.StrictMode>,
 )

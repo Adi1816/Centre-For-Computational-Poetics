@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
 import Button from '../Button/Button';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,6 +9,17 @@ const Navbar = ({ setShowLogin }) => {
   const navigate = useNavigate();
   const { token, setToken } = useContext(LoginContext);
   const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    document.body.addEventListener('click', (event) => {
+      if ((event.composedPath())[0].className === 'hamburger-menu') {
+        setShowMenu(true);
+      }
+      else {
+        setShowMenu(false);
+      }
+    })
+  }, [])
 
   const logout = () => {
     localStorage.removeItem('token');
@@ -62,8 +73,8 @@ const Navbar = ({ setShowLogin }) => {
         </ul>
       </div>
       <div className='mobile-menu'>
-        <div className='hamburger-menu' onClick={handleMenuClick}>
-          MENU
+        <div className={showMenu ? 'hamburger-menu' : 'cross'} onClick={handleMenuClick}>
+          {!showMenu ? '☰' : 'X'}
         </div>
         {showMenu && (
           <ul className='mobile-nav'>

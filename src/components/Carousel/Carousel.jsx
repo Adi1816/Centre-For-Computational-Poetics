@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Carousel.css'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
-import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
 

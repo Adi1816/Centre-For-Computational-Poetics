@@ -6,7 +6,7 @@
   width: 100%;
   border-radius: 1px solid blue;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 1.3vw;
 }
 
 .tool-desc-container img {
@@ -18,4 +18,10 @@
 
 .tool-desc-container p span {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .tool-desc-container {
+    font-size: 2.2vw;
+  }
 }

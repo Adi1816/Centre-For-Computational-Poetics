@@ -1,9 +1,11 @@
+.second-section {
+  margin-top: 12vw;
+}
+
 .second-section .poetry-analyzer-tools h2 {
   text-align: center;
-  font-size: 5vh;
+  font-size: 3vw;
   font-weight: 400;
-  /* margin-bottom: 60px; */
-  /* z-index: 5; */
 }
 
 .second-section .tools-info :nth-child(even) {
@@ -11,9 +13,19 @@
 }
 
 .second-section .tools-info {
-  margin: 10px 250px;
+  margin: 2vw 15vw;
   background-image: url(../../assets/wordCloud.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .second-section .tools-info {
+    margin: 10vw 10vw;
+  }
+
+  .second-section .poetry-analyzer-tools h2 {
+    font-size: 5vw;
+  }
 }
